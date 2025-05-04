@@ -1,0 +1,129 @@
+:root {
+    --color-primary: #e2a5f5; /* Màu primary */
+    --color-second:#c32af1; 
+}
+.color-primary{
+    color: var(--color-primary) !important;
+}
+.color-second{
+    color: var(--color-second) !important;
+}
+.bg-color-primary{
+    background-color: var(--color-primary) !important;
+}
+.bg-color-second{
+    background-color: var(--color-second) !important;
+}
+.navbar {
+    border-bottom: 2px solid #e6e6e6;
+}
+.navbar-brand img{
+    max-width: 80px;
+}
+.nav-link {
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--color-primary) !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+.nav-link.active {
+    color: var(--color-primary) !important;
+    font-weight: bold;
+}
+.list-makeup{
+    list-style-type: none;
+}
+.name{
+    color: var(--color-second);
+}
+.service-card {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--color-primary);
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.service-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.service-card .btn {
+    margin-top: 10px;
+    background-color: white;
+    color: var(--color-second);
+    border: 1px solid var(--color-second);
+}
+.service-card .btn:hover {
+    background-color: var(--color-second);
+    color: white;
+    border: 1px solid var(--color-second);
+
+}
+.feature-section .image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+.feature-section .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.feature-section h5 {
+    font-weight: bold;
+}
+.feature-section p {
+    color: #666;
+    line-height: 1.6;
+}
+.list-review img{
+    height: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+
+footer .logo a{
+    width: 28px;
+    height: 28px;
+
+}
+footer .logo i{
+    font-size: 28px;
+}
