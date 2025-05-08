@@ -22,50 +22,46 @@ a{
 }
 /* Navbar */
 .header{
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0 !important;
 }
+.navbar-brand .name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
 .navbar {
-    border-bottom: 2px solid #e6e6e6;
-   
+    border: 2px solid #e6e6e6;
+    justify-content: center !important;
+    padding: 12px !important;
 }
-.navbar-brand img{
-    max-width: 80px;
-}
-.nav-link {
-    font-weight: bold;
-    position: relative;
-}
-
-.nav-link:hover {
-    color: var(--color-primary) !important;
-}
-
-.nav-link::after {
-    content: "";
+.navbar .navbar-toggler{
     position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-primary);
-    transition: width 0.3s;
+    right: 0;
+    border: none;
+}
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem;
 }
 
-.nav-link:hover::after {
-    width: 100%;
-}
-.nav-link.active {
-    color: var(--color-primary) !important;
+.navbar-nav .nav-link.active {
+    color: var(--color-second) !important;
     font-weight: bold;
+    border-radius: 5px;
 }
-.list-makeup{
-    list-style-type: none;
+
+.offcanvas {
+    background-color: white;
+    color: black;
 }
-.name{
-    color: var(--color-second);
+
+.offcanvas-header .btn-close {
+    color: white;
 }
 /* Slider Video */
 .story-wrapper{
@@ -215,6 +211,15 @@ footer .logo i{
     opacity: 0;
     transform: scale(1);
     transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.messenger {
+    background-color: white;
+}
+
+.messenger img {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
 }
 /* Nút Zalo */
 .zalo {
