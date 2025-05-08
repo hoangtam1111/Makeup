@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar với Logo Nhỏ</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar với Logo Nhỏ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-2">
+    <div class="container header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-1">
             <a class="navbar-brand" href="#">
                 <img src="./img/logo.png"  alt="Logo">
             </a>
@@ -19,63 +21,87 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TRANG ĐIỂM TẠI NHÀ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">GIỚI THIỆU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./booking.html">ĐẶT LỊCH</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRANG ĐIỂM TẠI NHÀ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">GIỚI THIỆU</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="banner">
-                <img src="./img/banner.jpg" alt="" style="width:100%">
-            </div>
-            <h1 class="text-center fst-italic mt-3">Make Up Đẹp Tại Nhà</h1>
-            <h2 class="fst-italic">Make Up Là Gì?</h2>
-            <p>
-                Makeup, hay còn gọi là "Trang Điểm," là hành động làm đẹp cho khuôn mặt thông qua việc sử dụng các phụ kiện trang điểm như phấn, son, kẻ mày, kẻ mắt, nối mi, và dán mi. Makeup không chỉ giúp cải thiện vẻ ngoài mà còn thể hiện cá tính và phong cách của mỗi người.
-            </p>
-            <h3 class="fst-italic">Một vài kiểu Make Up hiện nay</h3>
-
-            <ul class="list-makeup">
-                <li>
-                    <strong class="fst-italic">-Makeup Hằng Ngày: </strong>Trang điểm nhẹ nhàng, tự nhiên, thường dùng cho công việc hoặc đi học. Gồm kem nền, che khuyết điểm, phấn má hồng, và son môi nhẹ.
+    <div class="container swiper mt-4">
+        <div class="story-wrapper">
+            <ul class="story-list swiper-wrapper">
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup Dự Tiệc Tại Nhà</p>
                 </li>
-                <li>
-                    <strong class="fst-italic">-Makeup Dự Tiệc: </strong>Được thực hiện cho các sự kiện, tiệc tùng. Thường có màu sắc nổi bật hơn, bao gồm phấn mắt đậm, kẻ mắt, và son môi quyến rũ.
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
                 </li>
-                <li>
-                    <strong class="fst-italic">-Makeup Cưới: </strong>Trang điểm cho cô dâu, thường phức tạp hơn với các kỹ thuật tạo khối và highlight để nổi bật trong ảnh. Sử dụng các sản phẩm bền lâu.
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
                 </li>
-                <li>
-                    <strong class="fst-italic">-Makeup Thời Trang: </strong>Sử dụng trong các buổi trình diễn thời trang hoặc chụp hình. Thường sáng tạo và độc đáo với các tông màu và kỹ thuật khác nhau.
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
                 </li>
-                <li>
-                    <strong class="fst-italic">-Makeup Chuyên Nghiệp: </strong>Dành cho các sự kiện lớn, yêu cầu kỹ thuật cao. Các chuyên viên thường thực hiện với các sản phẩm cao cấp và kỹ thuật phức tạp.
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
+                </li>
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
+                </li>
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
+                </li>
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
+                </li>
+                <li class="story-item swiper-slide">
+                    <a href="#" class="story-link">
+                       <video src="./video/video.mp4" class="story-video" muted loop></video>                       
+                    </a>
+                    <p class="story-title">Makeup tại nhà bình tân</p>
                 </li>
             </ul>
-
-            <div class="img-inner text-center">
-                <img src="./img/Makeup Chụp Hình TpHCM.jpg" alt="" style="max-width:500px; width:100%">
-            </div>
-            
+            <div class="swiper-button-prev swiper-slide-button"></div>
+            <div class="swiper-button-next swiper-slide-button"></div>
         </div>
     </div>
-    <div class="container py-5">
+    <div class="container py-5 mt-4">
         <div class="row">
+            <h1 class="text-center fst-italic mt-3">Make Up Đẹp Tại Nhà</h1>
             <h2>Make Up Đẹp Tại Nhà với <strong class="name">Jennis Châu</strong></h2>
             <p><strong class="name">Jennis Châu</strong> là một chuyên gia makeup chuyên nghiệp với kinh nghiệm lâu năm trong lĩnh vực làm đẹp. <strong class="name">Jennis Châu</strong> cung cấp cho khách hàng của mình những trải nghiệm làm đẹp chất lượng cao với phong cách riêng biệt và sự tận tâm từng chi tiết cùng khẩu hiệu <strong>BAO ĐẸP BAO HÀI LÒNG</strong>.</p>
-            <p>Hiện nay, có rất nhiều dịch vụ trang điểm và làm tóc mới xuất hiện, vì vậy khách hàng gặp khó khăn trong việc lựa chọn. Nếu bạn đang tìm kiếm dịch vụ makeup tại nhà ở TP.HCM, Make Up Đẹp Tại Nhà chính là sự lựa chọn hoàn hảo cho mọi cô gái.</p>
+            <p>Hiện nay, có rất nhiều dịch vụ trang điểm và làm tóc mới xuất hiện, vì vậy khách hàng gặp khó khăn trong việc lựa chọn. Nếu bạn đang tìm kiếm dịch vụ makeup tại nhà ở TP.HCM, Make Up Đẹp Tại Nhà chính là sự lựa chọn hoàn hảo cho mọi cô gái...<a href="./about.html">Xem thêm</a></p>
         </div>
         <div class="row g-4 mb-3">
           <!-- Dịch vụ 1 -->
@@ -163,86 +189,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <h5>Chuyên viên makeup giỏi</h5>
-            <p><strong style="color: red;">Đặc biệt: </strong>Jennis Châu cũng có thể làm đẹp cho các thành viên trong đại gia đình hoặc các bạn bè thân thiết của bạn, tạo ra một không gian gần rũi và thân thiện, nơi mọi người có thể cùng nhau tạo nên những kỷ niệm đáng nhớ.</p>
-            <p>
-                Trang điểm quan trọng với phái nữ? Không riêng gì nữ giới mà ngay cả nam giới cũng vậy, trang điểm mang đến vẻ đẹp xinh hơn, tự tin hơn,.. trang điểm sẽ:
-            </p>
-            <ul class="ps-4">
-                <li>Che khuất khuyết điểm</li>
-                <li>Giúp chúng ta trông trẻ hơn</li>
-                <li>Gợi cảm cuốn hút và tự tin trước đám đông</li>
-            </ul>
-        </div>
-        <h2 class="text-center color-primary" >Một Số Phong Cách Makeup Của Jennis Châu</h2>
-        <div class="row list-review">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Makeup Cô Dâu Đẹp Xinh.jpg" class="card-img-top" alt="Image 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm Cô Dâu</h5>
-                        <div class="card-text">
-                            <p>Thời gian từ 120 phút đến 180 phút. Khi bạn có khuôn mặt tròn hay dài hay gò má cao,.. sẽ có những phong cách trang điểm để đẹp + nổi bật + quyến rũ nhất.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Makeup-ba-sui-tai-nha-TpHCM.jpg" class="card-img-top" alt="Image 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm Mẹ Cô Dâu</h5>
-                        <p class="card-text">Thời gian từ 60 phút đến 90 phút.
-                            Ăn hỏi hay ăn cưới thì Bà Sui cũng rất quan trọng để kết hợp bên cạnh Cô Dâu thêm hài hòa, lung linh và rực rỡ.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Makeup ngoại cảnh tại nhà.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm ngoại cảnh</h5>
-                        <p class="card-text">Thời gian khoản 90 phút.
-                            Makeup ngoại cảnh là một phần không thể thiếu của các buổi ngoại cảnh, khi chúng ta muốn tạo ấn tượng và thể hiện phong cách của mình.
-                            Tuy nhiên makeup ngoại cảnh cần phải khác biệt so với makeup hằng ngày, vì môi trường và ánh sáng thay đổi liên tục.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Mekeup-di-tiec-tai-nha.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm dự tiệc</h5>
-                        <p class="card-text">Thời gian khoản 60 phút đến 90 phút
-                            Trang điểm theo sở thích, tâm trạng hay mong muốn của bạn:Nhẹ nhàng tự nhiên, sắc sảo, sang chảnh, quyến rũ, dễ thương, xinh đẹp như con gái Hàn từ đó các bạn sẽ trở nên trẻ trung hơn, tươi trẻ hơn lại không kém phần nổi bật và nhiều phong cách mới khác, tư vấn rõ hơn khi bạn quan tâm.   
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Makeup-ki-yeu-tai-nha-Tphcm.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm kỷ yếu</h5>
-                        <p class="card-text">Thời gian khoản 60 phút.
-                            Makeup kỷ yếu hiểu nôm na là trang điểm chụp ảnh chủ YẾU làm KỶ niệm, và thường gắn liền với các bạn học sinh cuối cấp hay sinh viên ra trường.Giúp các nàng / các chàng lên hình đẹp rực rỡ tạo nên những bộ ảnh để đời, lưu trữ sự thuần khiết, tự nhiên nhất.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-center p-2">
-                    <img src="./img/Makeup-nam-tai-nha.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-3">Makeup - Trang điểm nam giới</h5>
-                        <p class="card-text">Thời gian khoản 60 phút. 
-                            Trang điểm không chỉ dành riêng cho phái nữ, mà cũng đã trở thành một xu hướng phổ biến trong thế giới thời trang và làm đẹp cho nam giới. Trang điểm giúp che đi các khuyết điểm như mụn, quầng thâm hay nếp nhăn, giúp khuông mặt rạng rỡ, tươi mới hơn, mang lại cho quý ông sự tự tin, tỏa sáng và tăng thêm sự quyến rũ.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+       
+        <div class="row mt-4">
             <h2 class="text-center color-primary" >Bảng Giá Trang Điểm Tại Nhà</h2>
             <div class="list-price-makeup">
                 <div class="price-makeup">
@@ -358,6 +306,74 @@
                 </div>
             </div>
         </div>
+        <h2 class="text-center color-primary" >Một Số Phong Cách Makeup Của Jennis Châu</h2>
+        <div class="row list-review">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Makeup Cô Dâu Đẹp Xinh.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm Cô Dâu</h5>
+                        <div class="card-text">
+                            <p>Thời gian từ 120 phút đến 180 phút. Khi bạn có khuôn mặt tròn hay dài hay gò má cao,.. sẽ có những phong cách trang điểm để đẹp + nổi bật + quyến rũ nhất.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Makeup-ba-sui-tai-nha-TpHCM.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm Mẹ Cô Dâu</h5>
+                        <p class="card-text">Thời gian từ 60 phút đến 90 phút.
+                            Ăn hỏi hay ăn cưới thì Bà Sui cũng rất quan trọng để kết hợp bên cạnh Cô Dâu thêm hài hòa, lung linh và rực rỡ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Makeup ngoại cảnh tại nhà.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm ngoại cảnh</h5>
+                        <p class="card-text">Thời gian khoản 90 phút.
+                            Makeup ngoại cảnh là một phần không thể thiếu của các buổi ngoại cảnh, khi chúng ta muốn tạo ấn tượng và thể hiện phong cách của mình.
+                            Tuy nhiên makeup ngoại cảnh cần phải khác biệt so với makeup hằng ngày, vì môi trường và ánh sáng thay đổi liên tục.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Mekeup-di-tiec-tai-nha.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm dự tiệc</h5>
+                        <p class="card-text">Thời gian khoản 60 phút đến 90 phút
+                            Trang điểm theo sở thích, tâm trạng hay mong muốn của bạn:Nhẹ nhàng tự nhiên, sắc sảo, sang chảnh, quyến rũ, dễ thương, xinh đẹp như con gái Hàn từ đó các bạn sẽ trở nên trẻ trung hơn, tươi trẻ hơn lại không kém phần nổi bật và nhiều phong cách mới khác, tư vấn rõ hơn khi bạn quan tâm.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Makeup-ki-yeu-tai-nha-Tphcm.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm kỷ yếu</h5>
+                        <p class="card-text">Thời gian khoản 60 phút.
+                            Makeup kỷ yếu hiểu nôm na là trang điểm chụp ảnh chủ YẾU làm KỶ niệm, và thường gắn liền với các bạn học sinh cuối cấp hay sinh viên ra trường.Giúp các nàng / các chàng lên hình đẹp rực rỡ tạo nên những bộ ảnh để đời, lưu trữ sự thuần khiết, tự nhiên nhất.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-center p-2">
+                    <img src="./img/Makeup-nam-tai-nha.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-3">Makeup - Trang điểm nam giới</h5>
+                        <p class="card-text">Thời gian khoản 60 phút. 
+                            Trang điểm không chỉ dành riêng cho phái nữ, mà cũng đã trở thành một xu hướng phổ biến trong thế giới thời trang và làm đẹp cho nam giới. Trang điểm giúp che đi các khuyết điểm như mụn, quầng thâm hay nếp nhăn, giúp khuông mặt rạng rỡ, tươi mới hơn, mang lại cho quý ông sự tự tin, tỏa sáng và tăng thêm sự quyến rũ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
     </div>
     <footer class="bg-dark text-white py-4">
         <div class="container">
@@ -386,7 +402,6 @@
                 <div class="col-md-3">
                 <h5 class="mb-3">Thông Tin Liên Hệ</h5>
                 <ul class="list-unstyled">
-                    <li>✓ Địa chỉ: 27 Đường Số 1, Bình Hưng Hoà B, Bình Tân, Hồ Chí Minh.</li>
                     <li>✓ Hotline + Zalo: 0962.383.803</li>
                     <li>✓ Email: makuptainha@gmail.com</li>
                     <li>✓ Website: <a href="https://captocviet.com/makeup-tai-nha-quan-tan-binh.htm" class="text-white">https://captocviet.com/makeup-tai-nha-quan-tan-binh.htm</a></li>
@@ -404,6 +419,18 @@
             </div>
         </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="button-contract">
+
+    </div>
+    <div class="floating-buttons">
+        <div class="button zalo">
+            <img src="./img/zalo.png" alt="Zalo">
+        </div>
+        <div class="button call">
+            <img src="./img/phone.png" alt="Call">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -14,8 +14,19 @@
 .bg-color-second{
     background-color: var(--color-second) !important;
 }
+a{
+    text-decoration: none !important;
+}
+/* Navbar */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 !important;
+}
 .navbar {
     border-bottom: 2px solid #e6e6e6;
+   
 }
 .navbar-brand img{
     max-width: 80px;
@@ -53,6 +64,42 @@
 .name{
     color: var(--color-second);
 }
+/* Slider Video */
+.story-wrapper{
+    width: 100%;
+    overflow: hidden;
+  }
+  .story-list .story-item{
+    margin-right: 12px !important;
+  }
+  .story-list .story-item .story-link{
+    user-select: none;
+    display: block;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2 ease;
+  }
+  
+  .story-list .story-link .story-video {
+    width: 100%;
+    max-width: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .story-list .story-item .story-title{
+    position: absolute;
+    bottom: 8px;
+    left: 10%;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after ,
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: pink;
+  }
+/*  */
 .service-card {
     text-align: center;
     padding: 20px;
@@ -126,4 +173,70 @@ footer .logo a{
 }
 footer .logo i{
     font-size: 28px;
+}
+
+    /* Container chứa các nút */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+    
+    /* Nút cơ bản */
+.button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Hiệu ứng vòng tròn lan tỏa */
+.button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+/* Nút Zalo */
+.zalo {
+    background-color: #2d88ff;
+}
+
+.zalo img {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+/* Nút Call */
+.call {
+    background-color: #f44336;
+}
+
+.call img {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+/* Hiệu ứng khi hover */
+.button:hover::after {
+    opacity: 1;
+    transform: scale(2);
 }
