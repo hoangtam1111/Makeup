@@ -28,19 +28,20 @@ a{
     z-index: 1000;
 }
 .navbar-brand .name{
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: bold;
     color: var(--color-primary);
 }
-
+.navbar-brand  .slogan{
+    font-size: 14px;
+}
 .navbar {
-    border: 2px solid #e6e6e6;
-    justify-content: center !important;
     padding: 12px !important;
 }
+.navbar .logo{
+    width: 50px;
+}
 .navbar .navbar-toggler{
-    position: absolute;
-    right: 0;
     border: none;
 }
 .navbar-nav .nav-link {
@@ -247,4 +248,16 @@ footer .logo i{
 .button:hover::after {
     opacity: 1;
     transform: scale(2);
+}
+
+@media (max-width: 768px) {
+    .banner{
+        display: none !important;
+    }
+    .swiper-slide-button{
+        display: none !important;
+    }
+    .navbar .logo{
+        display: block !important;
+    }
 }
