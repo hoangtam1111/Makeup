@@ -31,6 +31,7 @@ a{
 .navbar-brand {
     color: white !important;
     font-weight: bold;
+    color: var(--color-primary) !important;
 }
 .navbar {
     padding: 12px !important;
@@ -63,6 +64,10 @@ a{
 
 .offcanvas-header .btn-close {
     color: white;
+}
+.navbar-toggler i{
+    color: white;
+    font-size: 28px;
 }
 /* Slider Video */
 .story-wrapper{
@@ -99,6 +104,10 @@ a{
   .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     color: pink;
   }
+.about img{
+    max-width: 400px;
+    width: 100%;
+}
 /*  */
 .service-card {
     text-align: center;
@@ -115,7 +124,7 @@ a{
 .service-card img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
     margin-bottom: 15px;
 }
