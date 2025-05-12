@@ -28,3 +28,15 @@ const stories = document.querySelectorAll('video');
             video.currentTime = 0; // Reset video to the beginning
         });
     });
+const toggleButton = document.getElementById("toggle-button");
+const hiddenContent = document.getElementById("hidden-content");
+
+toggleButton.addEventListener("click", () => {
+    if (hiddenContent.classList.contains("hidden")) {
+    hiddenContent.classList.remove("hidden");
+    toggleButton.textContent = "Thu gọn";
+    } else {
+    hiddenContent.classList.add("hidden");
+    toggleButton.textContent = "Xem thêm";
+    }
+});
