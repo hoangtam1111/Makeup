@@ -2,6 +2,7 @@
     --color-primary: #FF69B4; /* Màu primary */
     --color-second:#c32af1;
     --color-third:#fbbc04; 
+    --color-fouth:#5d5d5d;
 }
 .color-primary{
     color: var(--color-primary) !important;
@@ -12,11 +13,17 @@
 .color-third{
     color: var(--color-third) !important;
 }
+.color-fouth{
+    color: var(--color-fouth) !important;
+}
 .bg-color-primary{
     background-color: var(--color-primary) !important;
 }
 .bg-color-second{
     background-color: var(--color-second) !important;
+}
+.bg-color-fouth{
+    background-color: var(--color-fouth) !important;
 }
 ul{
     padding: 0 !important;
@@ -125,7 +132,7 @@ a{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #a9a9a9;
 }
 .service-card:hover {
     transform: translateY(-10px);
@@ -141,13 +148,13 @@ a{
 .service-card .btn {
     margin-top: 10px;
     background-color: white;
-    color: var(--color-second);
-    border: 1px solid var(--color-second);
+    color: black;
+    border: 1px solid black;
 }
 .service-card .btn:hover {
-    background-color: var(--color-second);
+    background-color: black;
     color: white;
-    border: 1px solid var(--color-second);
+    border: 1px solid black;
 
 }
 .feature-section .image-container img {
@@ -155,7 +162,6 @@ a{
     max-width: 500px;
     border-radius: 10px;
     background-color: #fff;
-    padding: 10px;
     border: 1px solid #ddd;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
